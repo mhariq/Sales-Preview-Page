@@ -20,13 +20,21 @@ p1: 'hsl(0, 80%, 86%)',p2: 'hsl(0, 74%, 74%)',
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/build/style.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
 
   <body>
     <div
-      class="grid min-h-screen grid-cols-1 grid-rows-1 gap-0 mx-auto my-0  lg:grid-cols-5"
+      class="
+        grid
+        min-h-screen
+        grid-cols-1 grid-rows-1
+        gap-0
+        mx-auto
+        my-0
+        lg:grid-cols-5
+      "
     >
       <!-- LOGO MOBILE  -->
       <div class="">
@@ -37,7 +45,13 @@ p1: 'hsl(0, 80%, 86%)',p2: 'hsl(0, 74%, 74%)',
       </div>
       <!-- TEXTBOX -->
       <div
-        class="row-start-3 text-center  lg:row-start-1 lg:text-left lg:col-start-1 lg:col-end-4 bg-textsm lg:bg-textlg"
+        class="
+          row-start-3
+          text-center
+          lg:row-start-1 lg:text-left lg:col-start-1 lg:col-end-4
+          bg-textsm
+          lg:bg-textlg
+        "
       >
         <!-- TITLE -->
         <div class="px-10 py-20 lg:pl-40 lg:pr-72">
@@ -83,13 +97,30 @@ p1: 'hsl(0, 80%, 86%)',p2: 'hsl(0, 74%, 74%)',
                 placeholder-lr placeholder-opacity-30
                 bg-w2
                 relative
+                focus:outline-none
+                focus:ring-2
+                focus:ring-red-300
+                focus:border-transparent
               "
             />
-            <div
-              class="absolute bottom-0 right-0 px-8 py-5 rounded-full shadow-xl  lg:px-12 bg-gradient-to-br from-p1 to-p2"
+
+            <button
+              href=""
+              class="
+                absolute
+                bottom-0
+                px-8
+                py-5
+                rounded-full
+                shadow-xl
+                -right-1
+                hover:bg-red-500
+                lg:px-12
+                bg-p1
+              "
             >
               <img src="/images/icon-arrow.svg" />
-            </div>
+            </button>
           </div>
         </div>
       </div>

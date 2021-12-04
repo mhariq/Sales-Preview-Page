@@ -34,3 +34,7 @@
     linear-gradient(to right bottom, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
   background-size: cover;
 }
+
+.bg-btn {
+  background: linear-gradient(hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
