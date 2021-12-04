@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .testing {
+  background-color: #ddd;
+  border: 2px solid #777;
+}
+
+:root {
+  --primary: #1eccac;
+  --leadFont: 1.2rem;
+} */
+
+.bg-lg {
+  background: url("/images/hero-desktop.jpg") no-repeat,
+    linear-gradient(to bottom, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  background-size: cover;
+}
+
+.bg-sm {
+  background: url("/images/hero-mobile.jpg") no-repeat,
+    linear-gradient(to bottom, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  background-size: cover;
+}
+
+.bg-textsm {
+  background-color: hsl(0, 100%, 98%);
+}
+.bg-textlg {
+  background: url("/images/bg-pattern-mobile.svg") no-repeat,
+    linear-gradient(to right bottom, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  background-size: cover;
+}

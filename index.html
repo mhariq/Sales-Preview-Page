@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!-- 
+- Mobile: 375px
+- Desktop: 1440px
+
+- Family: [Josefin Sans](https://fonts.google.com/specimen/Josefin+Sans)
+- Weights: light 300, regular 400, semi-bold 600
+
+lr: 'hsl(0, 36%, 70%)',dr: 'hsl(0, 93%, 68%)',gr: 'hsl(0, 6%, 24%)',
+w1: 'hsl(0, 0%, 100%)',w2: 'hsl(0, 100%, 98%)',
+p1: 'hsl(0, 80%, 86%)',p2: 'hsl(0, 74%, 74%)',
+
+### Gradients
+
+- Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
+- Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%) -->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/build/style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div
+      class="grid min-h-screen grid-cols-1 grid-rows-1 gap-0 mx-auto my-0  lg:grid-cols-5"
+    >
+      <!-- LOGO MOBILE  -->
+      <div class="">
+        <img
+          src="images/logo.svg"
+          class="block row-start-1 p-10 pb-0 lg:hidden"
+        />
+      </div>
+      <!-- TEXTBOX -->
+      <div
+        class="row-start-3 text-center  lg:row-start-1 lg:text-left lg:col-start-1 lg:col-end-4 bg-textsm lg:bg-textlg"
+      >
+        <!-- TITLE -->
+        <div class="px-10 py-20 lg:pl-40 lg:pr-72">
+          <img src="images/logo.svg" class="hidden lg:block" />
+          <p
+            class="
+              lg:text-[5rem]
+              text-[2.5rem]
+              lg:mt-24
+              mt-4
+              tracking-[10px]
+              uppercase
+              font-semibold
+              first-line:text-lr first-line:font-light
+              leading-tight
+            "
+          >
+            We're <br />
+            coming <br />soon
+          </p>
+          <p class="my-6 leading-6 lg:leading-10 text-lr font-base">
+            Hello fellow shoppers! We're currently building out new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals
+          </p>
+          <!-- FORM  -->
+          <div class="relative">
+            <input
+              id="full-name"
+              type="text"
+              placeholder="Email Address"
+              name="Email"
+              required
+              class="
+                inline-block
+                px-8
+                py-4
+                border-[1px]
+                w-[100%]
+                rounded-full
+                text-lr
+                border-lr
+                placeholder-lr placeholder-opacity-30
+                bg-w2
+                relative
+              "
+            />
+            <div
+              class="absolute bottom-0 right-0 px-8 py-5 rounded-full shadow-xl  lg:px-12 bg-gradient-to-br from-p1 to-p2"
+            >
+              <img src="/images/icon-arrow.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- IMAGE  -->
+      <div
+        class="w-auto min-h-[20rem] col-start-1 row-start-2 lg:hidden bg-sm"
+      ></div>
+      <div
+        class="
+          row-start-1
+          w-auto
+          h-[17rem] h-auto
+          col-start-4 col-end-6
+          bg-lg
+          hidden
+          lg:block
+        "
+      ></div>
+    </div>
+  </body>
+</html>
